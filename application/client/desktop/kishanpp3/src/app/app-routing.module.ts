@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { ProfilesettingsComponent } from './user/profilesettings/profilesettings.component';
 import { TemplateComponent } from './template/template.component';
 import { AdminComponent } from './admin/admin.component';
+import { Screen453561Component } from './screen453561/screen453561.component';
 import { Screen416851Component } from './screen416851/screen416851.component';
 import { Screen468114Component } from './screen468114/screen468114.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
 { path: 'usermanagement', component: UserComponent, canActivate: [AuthGuard] },
 { path: 'profile', component: ProfilesettingsComponent, canActivate: [AuthGuard] },
   { path: '', component: TemplateComponent , pathMatch: 'full' },
+{ path: 'screen453561', loadChildren: () => import('./screen453561/screen453561.module').then(mod => mod.Screen453561Module)},
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 { path: 'screen416851', loadChildren: () => import('./screen416851/screen416851.module').then(mod => mod.Screen416851Module)},
 
