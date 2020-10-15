@@ -51,6 +51,11 @@ service:
     type: NodePort
     port: 8080
     targetPort: 8080
+  pp3feature: 
+    name: pp3feature
+    type: NodePort
+    port: 8014
+    targetPort: 8014
 
 
 deployment:
@@ -77,6 +82,9 @@ deployment:
   desktop:
      name: desktop
      image: geppettotest/kishanpp3-desktop:1.0
+  pp3feature: 
+    name: pp3feature
+    image: geppettotest/kishanpp3-pp3feature:1.0
 
   camundapod:
      name: camundapod

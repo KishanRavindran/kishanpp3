@@ -69,9 +69,19 @@ services:
       - camundaservice
       - authproxy
       - securitymanager
+      - pp3feature
 
 
 
+  pp3feature: 
+    build: ../../../application/services/custom_services/pp3feature
+    image: pp3feature
+    container_name: pp3feature
+    ports: 
+      - 8014:8014
+    env_file: .env
+    depends_on:
+      - mongo
 
 
 volumes:

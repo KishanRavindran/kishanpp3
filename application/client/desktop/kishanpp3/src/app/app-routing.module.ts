@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { ProfilesettingsComponent } from './user/profilesettings/profilesettings.component';
 import { TemplateComponent } from './template/template.component';
 import { AdminComponent } from './admin/admin.component';
+import { Screen468114Component } from './screen468114/screen468114.component';
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: '', component: TemplateComponent , pathMatch: 'full' },
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
+{ path: 'screen468114', loadChildren: () => import('./screen468114/screen468114.module').then(mod => mod.Screen468114Module)},
 ];
 
 @NgModule({

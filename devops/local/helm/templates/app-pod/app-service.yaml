@@ -18,6 +18,9 @@ spec:
   - name: {{ .Values.service.admin.name }}
     port: {{ .Values.service.admin.port }}
     targetPort: {{ .Values.service.admin.targetPort }}
+  - name: {{ .Values.service.pp3feature.name }}
+    port: {{ .Values.service.pp3feature.port }}
+    targetPort: {{ .Values.service.pp3feature.targetPort }}
 
   selector:
     app: {{ .Values.app.prefix }}-app

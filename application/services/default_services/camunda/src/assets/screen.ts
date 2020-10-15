@@ -8,7 +8,7 @@
     ,
 {"resources":"login"}
     ,
-{"resources":"testviewscreen"}
+{"resources":"screen468114"}
     ,
 {"resources":"முகப்பு"}
     ,
