@@ -54,8 +54,8 @@ service:
   pp3feature: 
     name: pp3feature
     type: NodePort
-    port: 8014
-    targetPort: 8014
+    port: 8015
+    targetPort: 8015
 
 
 deployment:

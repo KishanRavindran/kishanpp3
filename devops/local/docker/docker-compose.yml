@@ -78,7 +78,7 @@ services:
     image: pp3feature
     container_name: pp3feature
     ports: 
-      - 8014:8014
+      - 8015:8015
     env_file: .env
     depends_on:
       - mongo
